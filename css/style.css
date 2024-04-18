@@ -1,0 +1,40 @@
+:root, :root [data-theme='dark'] {
+    --primary-color: #F0F0F0;
+    --primary-bg-color: #111217;
+}
+
+:root, :root [data-theme='light'] {
+    --primary-color: #0b0b0b;
+    --primary-bg-color: #e9e9e9;
+
+}
+
+header {
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 10px;
+  } 
+  li a {
+    padding: 5px 10px;
+    margin: 0;
+    border: 0px solid #f00;
+    background-color: #903;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  
+  li a:hover{
+    background: #ccc;
+    color: #000;
+    border-color: #000;
+  }
