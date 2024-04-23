@@ -67,6 +67,33 @@ body {
   color: var(--text-color);
 }
 
+a {
+  text-decoration: none; /* retiara o underline dos links */
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--primary-color); /* ao passar o mouse por cima dos menus muda de cor */
+}
+
+i {
+  color: var(--icon-color);
+}
+
+b {
+  font-weight: 400;
+}
+
+h1 {
+   font-size: 2.5rem;
+   font-weight: 200;
+}
+
+h2 { 
+
+
+}
+
 #header {
   display: flex;
   flex-flow: row wrap;
@@ -102,7 +129,7 @@ body {
   transformando todos os seus filhos diretos em flex itens */
   align-items: center;
   background: var(--primary-bg-color);
-  gap: 1rem;  /*    */ 
+  gap: 1rem;  /* espaço entre os menus */ 
 }
 
 .menu-item {
@@ -113,6 +140,7 @@ body {
   display: flex;
   align-items: center;
   gap: .5rem;
+  
 }
 
 
@@ -128,7 +156,7 @@ body {
 .menu-mobile .menu-link {
   flex-direction: column;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; 
 
 }
 
