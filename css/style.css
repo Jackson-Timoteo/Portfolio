@@ -18,7 +18,7 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um úni
   --primary-bg-color: #111217;
   --secondary-bg-color: #28292E;
   --primary-border-color: #28292E;
-	--secondary-border-color: #56575A;
+  --secondary-border-color: #56575A;
 
   --title-color: #F0F0F0;
   --text-color: #9A9A9C;
@@ -27,17 +27,17 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um úni
 }
 
 :root, :root [data-theme='light'] {
-  --primary-color: #0B0B0F;
+  --primary-color: #F0F0F0;
 
-	--primary-bg-color: #E9E9E9;
-	--secondary-bg-color: #C7C8C9;
-	--primary-border-color: #C7C8C9;
-	--secondary-border-color: #9A9A9C;
+  --primary-bg-color: #111217;
+  --secondary-bg-color: #C7C8C9;
+  --primary-border-color: #C7C8C9;
+  --secondary-border-color: #9A9A9C;
 
-	--title-color: #0B0B0F;
-	--text-color: #28292E;
-	--link-color: #28292E;
-	--icon-color: #56575A;
+  --title-color: #0B0B0F;
+  --text-color: #28292E;
+  --link-color: #28292E;
+  --icon-color: #56575A;
 }
 
 
@@ -72,35 +72,63 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   z-index: 2;
 }
 
+.header-logo .logo{
+  width: 3.25rem;
+  height: 3.25rem;
 
-
-.menu menu-ul {
-    margin: 5px;
-    padding: 10px;
 }
 
-li {
-    display: inline;
-    list-style-type: none;
-    margin: 10px;
-  } 
-  li a {
-    padding: 5px 10px;
-    margin: 0;
-    border: 0px solid #f00;
-    background-color: #903;
-    text-decoration: none;
-    color: #fff;
-  }
+.header-toggle {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  
-  li a:hover{
-    background: #ccc;
-    color: #000;
-    border-color: #000;
-  }
+#toggleTheme {
+  font-size: 1.5rem;
+  color: var(--icon-color);
+  cursor: pointer;
+  transition: ease-in-out .4s;  
+}
 
+.menu {
+  display: flex;
+  align-items: center;
+  background: var(--primary-bg-color);
+}
+
+.menu-item {
+  width: 100%;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
+.menu-mobile {
+  width: 100vw;
+  position: fixed ;
+  bottom: 0;
+  justify-content: space-between;
+  border-top: 1px solid var(--primary-border-color);
+
+}
+
+.menu-mobile .menu-link {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu0-text,
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text {
+  color: var(--primary-bg-color);
