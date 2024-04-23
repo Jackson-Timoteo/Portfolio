@@ -70,6 +70,8 @@ body {
 a {
   text-decoration: none; /* retiara o underline dos links */
   color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 a:hover {
@@ -90,8 +92,21 @@ h1 {
 }
 
 h2 { 
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
 
+h3 {
+  font-size: 1.55rem;
+  text-align: left; 
+}
 
+h4 {
+  column-rule: var();
+  font-weight: 400;
+  font-size: .1rem ;
+  text-align: left;
 }
 
 #header {
