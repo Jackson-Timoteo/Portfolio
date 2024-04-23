@@ -12,32 +12,33 @@ Isso oferece uma maneira flexível de definir valores
 que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um único lugar.
 */
 
-:root, :root [data-theme='dark'] {
-  --primary-color: #F0F0F0;
-
-  --primary-bg-color: #111217;
+:root, :root[data-theme='dark'] {
+  --primary-color: #F0F0F0;  /* cor de texto */
+  
+  --primary-bg-color: #111217;  /* cor de fundo  */
+  /* bg = background = plano de fundo */
   --secondary-bg-color: #28292E;
   --primary-border-color: #28292E;
-  --secondary-border-color: #56575A;
+  --secundary-border-color: #56575A;
 
-  --title-color: #F0F0F0;
-  --text-color: #9A9A9C;
-  --link-color: #9A9A9C;
-  --icon-color: #C7C8C9;
+  --title-color: #F0f0f0;
+  --text-color: #9a9a9c;
+  --link-color: #9a9a9c;
+  --icon-color: #c7c8c9;
+
 }
 
-:root, :root [data-theme='light'] {
-  --primary-color: #F0F0F0;
+:root [data-theme='light'] {
+  --primary-color: #0B0B0F;
+  --primary-bg-color: #E9E9E9;
+  --secondary-bg-color: #C7c8c9;
+  --primary-border-color:  #C7c8c9;
+  --secondary-border-color: #9a9a9c;
 
-  --primary-bg-color: #111217;
-  --secondary-bg-color: #C7C8C9;
-  --primary-border-color: #C7C8C9;
-  --secondary-border-color: #9A9A9C;
-
-  --title-color: #0B0B0F;
-  --text-color: #28292E;
-  --link-color: #28292E;
-  --icon-color: #56575A;
+  --title-color: #0b0b0f;
+  --text-color: #28292e;
+  --link-color: #28292e;
+  --icon-color: #56575a;
 }
 
 
@@ -76,6 +77,7 @@ body {
   z-index: 2;
 }
 
+
 .header-logo .logo{
   width: 3.25rem;
   height: 3.25rem;
@@ -94,10 +96,13 @@ body {
   transition: ease-in-out .4s;  
 }
 
-.menu {
+.menu{
   display: flex;
+  /*  Torna o elemento um flex container automaticamente
+  transformando todos os seus filhos diretos em flex itens */
   align-items: center;
   background: var(--primary-bg-color);
+  gap: 1rem;  /*    */ 
 }
 
 .menu-item {
@@ -131,4 +136,10 @@ body {
 .menu-link.active .menu0-text,
 .menu-link.active .menu-icon,
 .menu-link.active .menu-text {
-  color: var(--primary-bg-color);
+  color: var(--primary-color);
+}
+
+.menu-icon, .menu-text { color: var(--text-color);}
+.menu-icon{
+  font-size: 1.2rem;
+}
