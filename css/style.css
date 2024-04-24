@@ -124,6 +124,16 @@ p {
   color: var(--title-color);
 }
 
+/* h1:hover{
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
+
+p:hover{
+  transform: scale(1.05);
+  transition: ease-in-out;
+} */
+
 #header {
   display: flex;
   flex-flow: row wrap;
@@ -223,7 +233,7 @@ p {
 .btn {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     gap: 0.625rem;
     width: 100%;
     background: transparent;
@@ -233,4 +243,21 @@ p {
     transition: ease-in-out .3s;
     cursor: pointer;
     color: var(--primary-color);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
+
+.btn span, .btn i {
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  border: 1px solid var(--primary-color);
+}
+
+.btn-primary span {
+  color: var(--primary-color);
 }
