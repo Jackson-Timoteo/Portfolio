@@ -21,10 +21,10 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um úni
   --primary-border-color: #28292E;
   --secundary-border-color: #56575A;
 
-  --title-color: #F0f0f0;
-  --text-color: #9a9a9c;
-  --link-color: #9a9a9c;
-  --icon-color: #ffffff;
+  --title-color: #9c0505;
+  --text-color: #353566;
+  --link-color: #181864;
+  --icon-color: #8f1919;
 
 }
 
@@ -74,7 +74,6 @@ a {
   font-size: 0.9rem;
 }
 
-
 i {
   color: var(--icon-color);
 }
@@ -86,7 +85,7 @@ b {
 .resume {
    font-size: 2.5rem;
    font-weight: 200;
-   animation: 2s ease-in-out;
+   transition: ease-in-out .3s;
 }
 
 h2 { 
@@ -112,6 +111,14 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: var(--title-color);
   font-weight: 200;
+}
+
+p, span, li {
+  font-size: 1rem;
+}
+
+p {
+
 }
 
 #header {
@@ -181,18 +188,14 @@ h1, h2, h3 {
 }
 
 .menu-link.active .menu-icon,
-.menu-link.active .menu0-text,
+.menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
 .menu-link:hover .menu-text {
   color: var(--primary-color);
 }
 
-.menu-text  {
+.menu-icon, .menu-text  {
   color: var(--title-color);
-
-}
-.menu-icon { 
-  color: var(--icon-color);
 }
 
 .menu-icon{
@@ -205,6 +208,27 @@ h1, h2, h3 {
 }
 
 .menu-nav {
-  display: oo;
+  display: no;
 }
 
+.menu-principal {
+  gap: 1rem;
+}
+
+.menu-social {
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 3rem;
+  padding: 0.87rem 1.5rem;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+  color: var(--primary-color);
+}
