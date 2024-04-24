@@ -24,7 +24,7 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um úni
   --title-color: #F0f0f0;
   --text-color: #9a9a9c;
   --link-color: #9a9a9c;
-  --icon-color: #c7c8c9;
+  --icon-color: #ffffff;
 
 }
 
@@ -74,9 +74,6 @@ a {
   font-size: 0.9rem;
 }
 
-a:hover {
-  color: var(--primary-color); /* ao passar o mouse por cima dos menus muda de cor */
-}
 
 i {
   color: var(--icon-color);
@@ -86,9 +83,10 @@ b {
   font-weight: 400;
 }
 
-h1 {
+.resume {
    font-size: 2.5rem;
    font-weight: 200;
+   animation: 2s ease-in-out;
 }
 
 h2 { 
@@ -107,6 +105,13 @@ h4 {
   font-weight: 400;
   font-size: .1rem ;
   text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: 'League Spartan', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 200;
 }
 
 #header {
@@ -177,12 +182,29 @@ h4 {
 
 .menu-link.active .menu-icon,
 .menu-link.active .menu0-text,
-.menu-link.active .menu-icon,
-.menu-link.active .menu-text {
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
   color: var(--primary-color);
 }
 
-.menu-icon, .menu-text { color: var(--text-color);}
-.menu-icon{
-  font-size: 1.2rem;
+.menu-text  {
+  color: var(--title-color);
+
 }
+.menu-icon { 
+  color: var(--icon-color);
+}
+
+.menu-icon{
+  font-size: 1.1rem;
+}
+
+.menu-text {
+  font-size: 0.75rem;
+  text-transform: uppercase ;
+}
+
+.menu-nav {
+  display: oo;
+}
+
