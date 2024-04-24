@@ -21,10 +21,11 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um úni
   --primary-border-color: #28292E;
   --secundary-border-color: #56575A;
 
-  --title-color: #9c0505;
-  --text-color: #353566;
-  --link-color: #181864;
-  --icon-color: #8f1919;
+  --title-color: #F0F0f0;
+  --text-color: #9a9a9c;
+  --text-color-mobile: blue;
+  --link-color: #9a9a9c;
+  --icon-color: #c7c8c9;
 
 }
 
@@ -40,7 +41,6 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um úni
   --link-color: #28292e;
   --icon-color: #56575a;
 }
-
 
 html [data-theme=´light] .brand-logo {
   filter: invert(1);
@@ -64,7 +64,6 @@ html [data-theme=´light] .tecnologias-logo {
 body {
   background: var(--primary-bg-color);
   font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-color);
 }
 
 a {
@@ -72,6 +71,10 @@ a {
   color: var(--text-color);
   text-transform: uppercase;
   font-size: 0.9rem;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 i {
@@ -82,10 +85,10 @@ b {
   font-weight: 400;
 }
 
-.resume {
+h1 {
    font-size: 2.5rem;
    font-weight: 200;
-   transition: ease-in-out .3s;
+  
 }
 
 h2 { 
@@ -118,7 +121,7 @@ p, span, li {
 }
 
 p {
-
+  color: var(--title-color);
 }
 
 #header {
@@ -147,7 +150,6 @@ p {
   font-size: 1.5rem;
   color: var(--icon-color);
   cursor: pointer;
-  transition: ease-in-out .4s;  
 }
 
 .menu{
@@ -170,7 +172,6 @@ p {
   
 }
 
-
 .menu-mobile {
   width: 100vw;
   position: fixed ;
@@ -190,12 +191,12 @@ p {
 .menu-link.active .menu-icon,
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
-.menu-link:hover .menu-text {
-  color: var(--primary-color);
+.menu-link:hover .menu-text { /* a:hover = pseudo-classe  */
+    color: var(--primary-color);
 }
 
-.menu-icon, .menu-text  {
-  color: var(--title-color);
+.menu-icon, .menu-text{
+  color: var(--text-color);
 }
 
 .menu-icon{
@@ -220,15 +221,16 @@ p {
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  width: 100%;
-  background-color: transparent;
-  border-radius: 3rem;
-  padding: 0.87rem 1.5rem;
-  transition: ease-in-out .3s;
-  cursor: pointer;
-  color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.625rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
 }
