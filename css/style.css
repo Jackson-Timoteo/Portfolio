@@ -261,3 +261,55 @@ p:hover{
 .btn-primary span {
   color: var(--primary-color);
 }
+
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#home, .project, .about, .contact {
+  padding: 2.5rem 1rem;
+}
+
+.tecno {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 6.25rem 1rem 2rem;
+  background: var(--secondary-bg-color);
+  margin-top: -5.5rem;
+}
+
+.tecno h2 {
+  font-size: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
