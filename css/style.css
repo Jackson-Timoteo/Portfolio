@@ -182,9 +182,11 @@ p:hover{
   
 }
 
+/* Css menu mobile */
+
 .menu-mobile {
   width: 100vw;
-  position: fixed ;
+  position: fixed;
   bottom: 0;
   justify-content: space-between;
   border-top: 1px solid var(--primary-border-color);
@@ -267,6 +269,7 @@ p:hover{
   flex-direction: column;
   gap: 2rem;
 }
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -298,6 +301,28 @@ p:hover{
   text-transform: none;
   letter-spacing: normal;
   text-align: start;
+}
+
+.tecno-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: .5rem;
+}
+
+.tecno-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 5rem;
+}
+
+.tecno-logo {
+  height: 3rem;
+  width: 2.4rem;
 }
 
 
