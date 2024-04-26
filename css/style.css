@@ -322,16 +322,77 @@ p:hover{
   width: 2.4rem;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-cover {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end ;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.card-title {
+  font-size:2rem;
+  font-weight: 500;
+}
+
+.card-description {
+  color: var(--title-color);
+}
+
+.card-item{
+  color: var(--title-color);
+}
+
+.card-list, .about-list {
+  margin-left: 1.25rem;
+}
+
+.card-item, .about-item {
+  list-style: disc;
+}
 
 
+.card-button { 
 
+}
 
+.card-button .btn {
+  padding:  .65rem 1.25rem;
+}
 
+.card-button .btn span {
+  font-size: 1rem;
+}
 
+.card-body .tecno-item{
+  width: 4rem;
+  height: 4rem;
+}
 
-
-
-
-
-
-
+.card-body .tecno-logo {
+  height: 2rem;
+}
