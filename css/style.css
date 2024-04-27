@@ -396,3 +396,8 @@ p:hover{
 .card-body .tecno-logo {
   height: 2rem;
 }
+
+.project .btn {
+  width: auto;
+  height: auto;
+}
