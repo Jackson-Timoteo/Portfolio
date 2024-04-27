@@ -377,6 +377,8 @@ p:hover{
 
 
 .card-button { 
+  display: flex;
+  flex-flow: row wrap;
 
 }
 
