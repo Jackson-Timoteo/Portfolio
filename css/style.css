@@ -329,9 +329,16 @@ p:hover{
 .project {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 }
 
 .project-container{
+=======
+  gap: 2rem;
+}
+
+.project-container {
+>>>>>>> 8caded237002aa7f92f2081dee2105e258448a43
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -353,6 +360,7 @@ p:hover{
 .card-body {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
@@ -384,21 +392,62 @@ p:hover{
 
 .card-button .btn {
   padding: .65rem 1.2rem;
+=======
+  justify-content:flex-end ;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.card-title {
+  font-size:2rem;
+  font-weight: 500;
+}
+
+.card-description {
+  color: var(--title-color);
+}
+
+.card-item{
+  color: var(--title-color);
+}
+
+.card-list, .about-list {
+  margin-left: 1.25rem;
+}
+
+.card-item, .about-item {
+  list-style: disc;
+}
+
+
+.card-button { 
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.card-button .btn {
+  padding:  .65rem 1.25rem;
+>>>>>>> 8caded237002aa7f92f2081dee2105e258448a43
 }
 
 .card-button .btn span {
   font-size: 1rem;
 }
 
+<<<<<<< HEAD
 .card-body .tecno-list {
   gap: 0.75rem;
 }
 
 .card-body .tecno-item {
+=======
+.card-body .tecno-item{
+>>>>>>> 8caded237002aa7f92f2081dee2105e258448a43
   width: 4rem;
   height: 4rem;
 }
 
+<<<<<<< HEAD
 
 .project .btn {
   width: auto;
@@ -426,10 +475,13 @@ p:hover{
   border: 1px solid;
   object-fit: cover;
   object-position: center;
+=======
+.card-body .tecno-logo {
+  height: 2rem;
+>>>>>>> 8caded237002aa7f92f2081dee2105e258448a43
 }
 
-
-
-
-
-
+.project .btn {
+  width: auto;
+  height: auto;
+}
