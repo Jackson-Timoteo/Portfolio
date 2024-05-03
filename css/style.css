@@ -120,6 +120,10 @@ p, span, li {
   font-size: 1rem;
 }
 
+span {
+  color: var(--primary-color);
+}
+
 p {
   color: var(--title-color);
 }
@@ -547,4 +551,11 @@ p:hover{
 
 .accordion-item.active .bi-caret-down-fill{
   transform: rotate(180deg);
+}
+
+
+
+.footer {
+  padding-top: 5rem;
+  text-align: center;
 }
