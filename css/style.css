@@ -175,6 +175,10 @@ p:hover{
   width: 100%;
 }
 
+.menu-item {
+  color: var(--text-color);
+}
+
 .menu-link {
   display: flex;
   align-items: center;
@@ -322,13 +326,107 @@ p:hover{
   width: 2.4rem;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-cover {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-left: 1.25rem;
+}
+
+.card-description {
+  color: var(--title-color); 
+}
+
+.card-list {
+  color: var(--title-color);
+}
+
+.card-list .about-list {
+  margin-left: 1.25rem;
+}
+
+.card-button, .card-description {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card-button .btn {
+  padding: .65rem 1.2rem;
+}
+
+.card-button .btn span {
+  font-size: 1rem;
+}
+
+.card-body .tecno-list {
+  gap: 0.75rem;
+}
+
+.card-body .tecno-item {
+  width: 4rem;
+  height: 4rem;
+}
 
 
+.project .btn {
+  width: auto;
+  margin: auto;
+}
+/*  */
 
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
+.about-content1 .about-content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
 
-
-
+.about-logo {
+  width: 100%;
+  border-radius: 50rem;
+  border: 1px solid;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 
