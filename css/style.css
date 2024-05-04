@@ -553,9 +553,44 @@ p:hover{
   transform: rotate(180deg);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--secondary-bg-color);
+}
 
+.contact p {
+  text-align: center;
+}
+
+.contact .btn {
+  width: auto;
+}
+
+.contact .email {
+  text-transform: uppercase;
+}
 
 .footer {
-  padding-top: 5rem;
+  margin-bottom: 5px;
+}
+
+.footer p ´{
+  font-size: .87rem;
   text-align: center;
+  padding: 1rem;
+}
+
+
+
+/* Respons */
+
+@media (min-width: 768px) {
+  # header{
+
+  }
 }
