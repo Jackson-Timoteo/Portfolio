@@ -560,7 +560,7 @@ p:hover{
   align-items: center;
   gap: 1.5rem;
   border-top: 1px solid var(--primary-border-color);
-  border-bottom: 1px solid var(--secondary-bg-color);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .contact p {
@@ -590,7 +590,47 @@ p:hover{
 /* Respons */
 
 @media (min-width: 768px) {
-  # header{
+  #header {
+    position: fixed;
+    border-bottom: 1px solid var(--primary-border-color);
+    padding: 1rem 6rem;
+    background: var(--primary-border-color);
+  }
+  .menu-nav {
+    display: flex;
+  }
 
+  .menu-nav,
+  .header-toggle {
+    min-width:30% ;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  #home, .project .about {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tecno {
+    padding: 6.25rem 6rem 2rem 6rem;
+    margin-top:  -6rem;
+  }
+
+  .contact {
+    padding: 6rem;
+  }
+
+  .contact p {
+    width: 80%;
   }
 }
