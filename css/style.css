@@ -86,8 +86,8 @@ b {
 }
 
 h1 {
-   font-size: 2.5rem;
-   font-weight: 200;
+   font-size: 4rem;
+   font-weight: 20;
   
 }
 
@@ -128,16 +128,6 @@ p {
   color: var(--title-color);
 }
 
-/* h1:hover{
-  transform: scale(1.05);
-  transition: ease-in-out;
-}
-
-p:hover{
-  transform: scale(1.05);
-  transition: ease-in-out;
-} */
-
 #header {
   display: flex;
   flex-flow: row wrap;
@@ -171,7 +161,6 @@ p:hover{
   /*  Torna o elemento um flex container automaticamente
   transformando todos os seus filhos diretos em flex itens */
   align-items: center;
-  background: var(--primary-bg-color);
   gap: 1rem;  /* espaço entre os menus */ 
 }
 
@@ -226,7 +215,7 @@ p:hover{
 }
 
 .menu-nav {
-  display: no;
+  display: none;
 }
 
 .menu-principal {
@@ -465,12 +454,13 @@ p:hover{
 }
 
 .about-logo {
-  width: 100vw;
+  /* width: 100vw;
   height: 100vw;
+  */
   border-radius: 50rem;
   border: 1px solid;
   object-fit: cover;
-  object-position: center;
+  object-position: center; 
 }
 
 .about-description {
@@ -577,15 +567,13 @@ p:hover{
 
 .footer {
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .footer p ´{
   font-size: .87rem;
-  text-align: center;
   padding: 1rem;
 }
-
-
 
 /* Respons */
 
@@ -596,7 +584,13 @@ p:hover{
     padding: 1rem 6rem;
     background: var(--primary-border-color);
   }
-  .menu-nav {
+
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .menu-nav{
     display: flex;
   }
 
@@ -605,12 +599,6 @@ p:hover{
     min-width:30% ;
   }
 
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
   #home, .project .about {
     padding: 8rem 6rem 4rem 6rem;
   }
@@ -632,5 +620,83 @@ p:hover{
 
   .contact p {
     width: 80%;
+  }
+
+  .footer {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px)  {
+  .project-card {
+    flex-direction: row;
+  }
+  .project-card.card-reverse {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .card-cover {
+    width: 55%;
+  }
+
+  .about {
+    gap: 5rem;
+  }
+  .about-content1 .about-content2 {
+    display: grid;
+    grid-template-columns: 40% 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about-description h2 {
+    text-align:  left;
+  }
+
+  .card-button {
+    justify-content: flex-start;
+  }
+}
+
+@media (mix-width: 1200px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  #home {
+    padding: 12rem 6rem 2rem;
+  }
+
+  .main-content .btn {
+    width: auto;
+  }
+
+  .tecno {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem 6em 4rem;
+  }
+
+  .tecno h2 {
+    font-size: 3rem;
+    width: 5%;
+  }
+
+  .tecno-list {
+    gap:1rem
+  }
+  .tecno-item {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .tecno-logo {
+    height: 3rem;
+  }
+
+  p, span, li {
+    
   }
 }
