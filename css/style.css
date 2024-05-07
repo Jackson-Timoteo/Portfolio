@@ -697,6 +697,31 @@ p {
   }
 
   p, span, li {
-    
+    font-size: 1.15rem;
   }
+  .card-button .btn,
+  .about-description .btn {
+    width: auto;
+  }
+}
+
+@media (win-width: 1400px) {
+  h1 {
+    font-size: 6.25rem;
+  }
+  h2 {
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 3.25rem;
+  }
+  
+  .header {
+    padding: 12rem 15rem 2rem;
+  }
+
+  .tecno, .project .about {
+    padding: 10rem 15rem 4rem;
+  }
+
 }
