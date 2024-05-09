@@ -205,11 +205,11 @@ p {
     font-size: .75rem;
     text-transform: uppercase;
 }
-/* 
-.header-nav {   menu desktop 
-    display: none;    none 
+
+.header-nav {  
+    display: none;  
 }
-*/
+
 .menu-principal {
     gap: 1rem;
 }
