@@ -386,7 +386,7 @@ p {
     gap: 2rem;
 }
 .sobre-logo {
-    width: 100%;
+    width: 85%;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
